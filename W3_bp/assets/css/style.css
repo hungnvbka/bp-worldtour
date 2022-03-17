@@ -22,6 +22,11 @@ html {
  3. Tổng quan đến chi tiết
 
   */
+
+.clear {
+    clear: both;
+}
+
 #main {
 
 }
@@ -151,6 +156,8 @@ html {
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #content .section-heading {
@@ -175,12 +182,14 @@ html {
     line-height: 1.4;
 }
 
-#content .member-list {
+#content .members-list {
     margin-top: 48px;
 }
 
 #content .member-item {
     float: left;
+    width: calc(100%/4);
+    text-align: center;
 }
 
 #content .member-name {
@@ -190,6 +199,8 @@ html {
 #content .member-img {
     margin-top: 15px;
     width: 160px;
+    height: 230px;
+    border-radius: 4px;
 }
 
 #footer {
