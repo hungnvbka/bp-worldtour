@@ -1,4 +1,5 @@
 /* Reset CSS */
+
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +10,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* 
 1. Vị trí của nó
 2. Kích thước của nó
@@ -16,7 +18,8 @@ html {
 4. Kiểu dáng 
  */
 
- /* 
+
+/* 
  1. Làm từ ngoài vào trong
  2. Từ trên xuống dưới
  3. Tổng quan đến chi tiết
@@ -31,11 +34,14 @@ html {
     color: #fff !important;
 }
 
+
 /* Ticket */
+
 .ticket-list {
     background-color: #fff;
     margin-top: 40px;
 }
+
 .ticket-list .sold-out {
     margin-left: 16px;
     background-color: #f05;
@@ -64,6 +70,7 @@ html {
     border-bottom: 1px solid #ccc;
 }
 
+
 /* Palace */
 
 .places-list {
@@ -85,6 +92,7 @@ html {
     object-fit: cover;
     display: block;
 }
+
 .place-img:hover {
     opacity: 0.8;
 }
@@ -115,17 +123,16 @@ html {
     background-color: #000;
     text-align: center;
     text-decoration: none;
-    padding:11px 16px;
+    padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
 }
+
 .palace-buy-btn:hover {
     background-color: #f05;
 }
 
-#main {
-
-}
+#main {}
 
 #header {
     height: 46.5px;
@@ -133,26 +140,28 @@ html {
     background-color: rgb(255, 0, 85);
     position: fixed;
     top: 0;
-    z-index: 1; 
+    z-index: 1;
 }
 
 #nav {
     display: inline-block;
-} 
-
-.tour-section {
-    background-color: rgb(255, 0, 85);;
 }
 
-#nav, .subnav {
+.tour-section {
+    background-color: rgb(255, 0, 85);
+    ;
+}
+
+#nav,
+.subnav {
     list-style: none;
 }
 
-#nav > li {
+#nav>li {
     display: inline-block;
 }
 
-#nav li{
+#nav li {
     position: relative;
 }
 
@@ -184,7 +193,6 @@ html {
 #header .search-btn {
     float: right;
     padding: 0 23px;
-    
 }
 
 #header .search-btn:hover {
@@ -192,7 +200,7 @@ html {
     cursor: pointer;
 }
 
-#nav > li > a {
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
@@ -207,7 +215,7 @@ html {
     display: block;
 }
 
-#nav > li:hover > a,
+#nav>li:hover>a,
 #nav .subnav li:hover a {
     color: #fff;
     background-color: #000;
@@ -223,6 +231,7 @@ html {
     background: url('/assets/img/slider1.jpg') top center / cover no-repeat;
     position: relative;
 }
+
 #slider .text-content {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -233,22 +242,21 @@ html {
     transform: translateX(-50%); */
 }
 
-#slider .text-heding{
+#slider .text-heding {
     text-align: center;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-#slider .text-description{
+#slider .text-description {
     text-align: center;
     font-size: 15px;
     margin-top: 25px;
 }
 
-
 #content {
-    color:#000;
+    color: #000;
 }
 
 #content .content-section {
@@ -267,8 +275,6 @@ html {
     font-weight: 500;
     letter-spacing: 4px;
 }
-
-
 
 #content .section-sub-heading {
     text-align: center;
@@ -306,14 +312,18 @@ html {
     border-radius: 4px;
 }
 
+.modal.open {
+    display: flex;
+}
+
 .modal {
     position: fixed;
+    display: none;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -323,6 +333,8 @@ html {
     width: 900px;
     min-height: 200px;
     position: relative;
+    animation: modalFaceIn ease-in .3s;
+    /* border-radius: 10px; */
 }
 
 .modal-header {
@@ -386,15 +398,31 @@ html {
 #buy-button:hover {
     opacity: 1;
 }
+
 .modal-footer {
     text-align: right;
     padding: 12px;
     font-size: 15px;
 }
+
 .modal-footer a {
     color: rgb(0, 110, 255);
 }
 
-#footer {
+#footer {}
+
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+}
 
 }
