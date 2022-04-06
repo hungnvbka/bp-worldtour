@@ -67,9 +67,29 @@
         .mt-16 {
             margin-top: 16px;
         }
+
+        .pull-right {
+            float: right;
+        }
         
         .text-white {
             color: #fff !important;
+        }
+
+        .btn {
+            color: #fff;
+            background-color: #000;
+            text-align: center;
+            text-decoration: none;
+            padding: 11px 16px;
+            display: inline-block;
+            margin-top: 15px;
+            border: none;
+        }
+        
+        .btn:hover {
+            background-color: #f05;
+            cursor: pointer;
         }
         /* Main */
         
@@ -112,7 +132,6 @@
         
         .places-list {
             margin-top: 32px;
-            margin-bottom: 48px;
         }
         /* .place-item {} */
         
@@ -148,19 +167,6 @@
             line-height: 1.5;
         }
         
-        .palace-buy-btn {
-            color: #fff;
-            background-color: #000;
-            text-align: center;
-            text-decoration: none;
-            padding: 11px 16px;
-            display: inline-block;
-            margin-top: 15px;
-        }
-        
-        .palace-buy-btn:hover {
-            background-color: #f05;
-        }
         
         #header {
             height: 46.5px;
@@ -289,9 +295,9 @@
         
         #content .content-section {
             width: 800px;
+            padding: 64px 0 112px;
             margin-left: auto;
             margin-right: auto;
-            padding: 64px 0;
             display: flex;
             flex-direction: column;
         }
@@ -458,21 +464,36 @@
             border: 1px solid #ccc;
             width: 100%;
         }
-        
-        .contact-form .contact-submit-btn {
-            float: right;
-            background-color: #000;
-            color: #fff;
-            padding: 10px 16px;
-            border: 2px solid #ccc;
+        /* Playlist-section */
+        .playlist-section img {
+            width: 100%;
+        }
+        #footer {
+            padding: 64px 16px;
+            text-align: center;
+        }
+
+        #footer .socials-list {
+            font-size: 24px;
+        }
+
+        #footer .socials-list a {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        #footer .socials-list a:hover, #footer .copy-right a:hover {
+            color: rgba(0, 0, 0, 0.4);
         }
         
-        .contact-form .contact-submit-btn:hover {
-            background-color: #f05;
+        #footer .copy-right {
+            margin-top: 15px;
+            color: rgba(0, 0, 0, 0.6);
         }
-        
-        #footer {}
-        
+
+        #footer .copy-right a {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
         @keyframes modalFaceIn {
             from {
                 opacity: 0;
